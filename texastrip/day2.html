@@ -1,0 +1,228 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day 2 — Christiansburg, VA → Nashville, TN (via Abingdon, Kingsport & Knoxville)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Simple, readable, mobile-friendly */
+    :root {
+      --bg: #ffffff;
+      --text: #111;
+      --muted: #444;
+      --accent: #0c66ff;
+      --accent-dark: #084bbd;
+      --warn: #c20000; /* driving time red */
+      --card: #f7f7f9;
+    }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font-family: Arial, Helvetica, sans-serif; }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 20px; }
+    h1 { font-size: 28px; margin: 0 0 12px; }
+    h2 { font-size: 22px; margin: 28px 0 10px; }
+    h3 { font-size: 18px; margin: 22px 0 8px; }
+    h4 { font-size: 18px; margin: 18px 0 6px; }
+    p { font-size: 16px; line-height: 1.5; margin: 10px 0; }
+    ul { margin: 8px 0 18px 22px; padding:0; }
+    li { margin: 6px 0; line-height: 1.5; }
+    .summary { background: var(--card); border-radius: 10px; padding: 14px; }
+    .meta { display: grid; gap: 4px; font-size: 16px; }
+    .drive-time { color: var(--warn); font-weight: bold; }
+    .section { border-top: 1px solid #e8e8ee; padding-top: 16px; margin-top: 16px; }
+    .time-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+    .time { font-weight: 700; }
+    .tag { color: var(--muted); font-style: italic; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover, a:focus { color: var(--accent-dark); text-decoration: underline; }
+    .btn-link {
+      display: inline-block; padding: 10px 14px; border-radius: 10px;
+      background: #eef3ff; font-weight: 700; margin: 6px 0;
+    }
+    .city { font-weight: 700; font-size: 17px; }
+    .places { background: var(--card); border-radius: 10px; padding: 10px 14px; }
+    .note { color: var(--muted); }
+
+        /* Corner nav tabs */
+    .corner-nav {
+      position: fixed; bottom: 16px; left: 16px; right: 16px;
+      display: flex; justify-content: space-between; pointer-events: none;
+    }
+    .corner-nav a {
+      pointer-events: auto;
+      display: inline-block; padding: 10px 14px; border-radius: 999px;
+      background: #eef3ff; font-weight: 700;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .fred {color:#980000;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>🚗 Day 2: <span style="background:#fff2cc; padding:2px 6px; border-radius:6px;">SUNDAY</span> — Christiansburg, VA → Nashville, TN</h1>
+
+    <div class="summary">
+      <div class="meta">
+        <div><strong>Total driving time:</strong> <span class="drive-time">~7 hr 45 min</span> (excluding stops)</div>
+        <div><strong>Departure time:</strong> 9:00 AM</div>
+        <div><strong>Arrival in Nashville:</strong> ~9:15 PM (8:15 Central)</div>
+        <div><strong>General Route:</strong> I‑81 S → US‑11W → I‑40 W</div>
+      </div>
+      <p>
+        🔗 <a class="btn-link" href="https://maps.app.goo.gl/eKEmtkhGMDZRa4PcA" target="_blank" rel="noopener">Google Maps route overview</a>
+        &nbsp;|&nbsp;
+        📍 <a class="btn-link" href="https://maps.app.goo.gl/CR47H3bA9os9yhYn6" target="_blank" rel="noopener">List of Key Places</a>
+      </p>
+    </div>
+
+    <!-- Depart Christiansburg -->
+    <div class="section">
+      <h4 class="time-row">🚗 <span class="time">9:00 AM</span> — Depart Christiansburg, VA &nbsp; <span class="tag drive-time">1 hr 35 min to Abingdon</span></h4>
+      <ul>
+        <li>Get on the road early for a scenic and comfortable drive down I‑81.</li>
+        <li>Follow I‑81 S to US‑11 S/E Main St in Washington County. Take exit 19 from I‑81 S.</li>
+      </ul>
+    </div>
+
+    <!-- Arrive Abingdon -->
+    <div class="section">
+      <h4 class="time-row">⭐ <span class="time">10:35 AM</span> — Arrive in Abingdon, VA (<a href="https://maps.app.goo.gl/swQMnq8ZNnf14A8W6" target="_blank" rel="noopener">Main St / Barter Theatre</a>)</h4>
+      <ul>
+        <li>Stroll down <strong>Main Street</strong>.</li>
+        <li>Snap a photo outside the historic <strong>Barter Theatre</strong>.</li>
+        <li>Optional coffee and restroom stop — ⏰ <em>Time at stop: ~30 minutes</em></li>
+      </ul>
+    </div>
+
+    <!-- Depart Abingdon -->
+    <div class="section">
+      <h4 class="time-row">🚗 <span class="time">11:05 AM</span> — Depart Abingdon, VA &nbsp; <span class="tag drive-time">1 hr 5 min to Riverfront</span></h4>
+      <p>🗺️ <a class="btn-link" href="https://mapq.st/41vqe2V" target="_blank" rel="noopener">MAPQUEST FOR THIS LEG — Google driving directions fail</a></p>
+      <ul>
+        <li>Continue on the relaxed and scenic <strong>US‑11W S / Lee Hwy</strong> toward Kingsport. Some stretches are 11 &amp; 19 (Lee Highway). Stay on this road until Kingsport.</li>
+      </ul>
+    </div>
+
+    <!-- Lunch Kingsport -->
+    <div class="section">
+      <h4 class="time-row">🍽️ <span class="time">12:00 PM</span> — Lunch at <a href="https://maps.app.goo.gl/t6njHT7ShXVKXx2EA" target="_blank" rel="noopener">Riverfront Seafood Co.</a>, Kingsport, TN</h4>
+      <ul>
+        <li>Make reservations in advance.</li>
+        <li>Favorite riverside seafood spot with fast, friendly service.</li>
+        <li>Offers diabetic‑friendly and light meal options — ⏰ <em>Time at stop: ~1 hr 15 min</em></li>
+      </ul>
+    </div>
+
+    <!-- Depart Kingsport -->
+    <div class="section">
+      <h4 class="time-row">🚗 <span class="time">1:15 PM</span> — Depart Kingsport, TN &nbsp; <span class="tag drive-time">1 hr 35 min to Knoxville</span></h4>
+      <ul>
+        <li class="fred">IF YOU HAVE AN EXTRA 15 MINUTES - Take US‑11W all the way to Knoxville. </li>
+        <li>If you want to hurry, drive southwest toward Knoxville via I‑26 E/US‑23 S → I‑81 S → I‑40 W.</li>
+      </ul>
+    </div>
+
+    <!-- Arrive Market Square -->
+    <div class="section">
+      <h4 class="time-row">⭐ <span class="time">2:50 PM</span> — Arrive at <a href="https://maps.app.goo.gl/vLeyC1eooef2QDmS8" target="_blank" rel="noopener">Market Square</a>, Knoxville, TN</h4>
+      <ul>
+        <li>Park in the <strong>Market Square Garage</strong> (free on weekends).</li>
+        <li>Stroll Market Square and nearby <strong>Gay Street</strong>.</li>
+        <li>Optional: visit <strong>Tennessee Theatre</strong> (exterior) or grab a coffee — ⏰ <em>~1 hour</em></li>
+      </ul>
+    </div>
+
+    <!-- Depart Knoxville -->
+    <div class="section">
+      <h4 class="time-row">🚗 <span class="time">4:00 PM</span> — Depart Knoxville, TN &nbsp; <span class="tag drive-time">~3 hours to Nashville</span></h4>
+      <ul>
+        <li>Continue west on I‑40 across the Cumberland Plateau all the way to Nashville.</li>
+      </ul>
+    </div>
+
+    <!-- Time change -->
+    <div class="section">
+      <h3>⏰ <span style="color:#009C42; font-weight:700;">TIME ZONE CHANGE</span></h3>
+      <ul>
+        <li>You will cross into Central time 30 minutes out from Knoxville near Rockwood - keep your eyes peeled for the <a href="https://maps.app.goo.gl/LprM9xozz7Eoeec29" target="_blank" rel="noopener">sign</a></li>
+        <li>You can catch an extra hour of sleep tonight or stay around downtown Nashville longer.</li>
+      </ul>
+    </div>
+
+    <!-- Dinner note -->
+    <div class="section">
+      <h3>🍽️ <span style="color:#980000; font-weight:700;">EAT DINNER BETWEEN KNOXVILLE AND NASHVILLE</span></h3>
+      <ul>
+        <li>Nashville will be packed so eat up when you get hungry. If you can keep your meal to 30 minutes you can get to Nashville by 6:30pm CENTRAL</li>
+      </ul>
+      <p>📍 <a class="btn-link" href="https://maps.app.goo.gl/umMizaBbFWdwzZEG9" target="_blank" rel="noopener">Day 2 Dinner (map list)</a></p>
+
+      <div class="places">
+        <p class="city">📍 Harriman, TN</p>
+        <ul>
+          <li>Ruby Tuesday — <a href="https://maps.app.goo.gl/LxV7jWkayDoJojQt6" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+          <li>Cracker Barrel — <a href="https://maps.app.goo.gl/Z7BXmjevgY79ZoQK8" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+        </ul>
+
+        <p class="city">📍 Crossville, TN</p>
+        <ul>
+          <li>Rumors Bar &amp; Grill — <a href="https://maps.app.goo.gl/RsqfSNqL9mnrH19B6" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+          <li>Firehouse Subs — <a href="https://maps.app.goo.gl/Bajgq3e3aFBDDjBp9" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+          <li>Cracker Barrel — <a href="https://maps.app.goo.gl/rxKGTvN1zJ5vdtcR7" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+          <li>Shoney’s — <a href="https://maps.app.goo.gl/3aw3hKcVbC1JF35f9" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+        </ul>
+
+        <p class="city">📍 Cookeville, TN</p>
+        <ul>
+          <li>Midtown Social — <a href="https://maps.app.goo.gl/PGnid9XYZZ6ehcR8A" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+          <li>Cheddar’s Scratch Kitchen — <a href="https://maps.app.goo.gl/fQmHPR1EzsFRLsk57" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+          <li>Rib City BBQ — <a href="https://maps.app.goo.gl/NYqr3Y4Potj1YF7m9" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+        </ul>
+
+        <p class="city">📍 Gordonsville, TN</p>
+        <ul>
+          <li>Waffle House — <a href="https://maps.app.goo.gl/TibS5QZiAgZy8qZWA" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+          <li>Bellacino’s Pizza &amp; Grinders — <a href="https://maps.app.goo.gl/YmNz1Cbvq46XEP2L9" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+        </ul>
+
+        <p class="city">📍 Lebanon, TN</p>
+        <ul>
+          <li>Uncle Pete’s Truck Stop — <a href="https://maps.app.goo.gl/X55hTdZUozhkAUmEA" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+          <li>Cracker Barrel — <a href="https://maps.app.goo.gl/DhhMnMbFMCrKyJ9R7" target="_blank" rel="noopener">🔗 Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Arrive Nashville / Broadway -->
+    <div class="section">
+      <h4 class="time-row">⭐ <span class="time">6:30 PM (7:30 Eastern)</span> — Arrive at Broadway / <a href="https://maps.app.goo.gl/C7VndcKkWYT3C9J7A" target="_blank" rel="noopener">Tootsie’s Orchid Lounge</a>, Nashville, TN</h4>
+      <ul>
+        <li>Use <a href="https://www.parkwhiz.com/ryman-auditorium-parking/" target="_blank" rel="noopener">parkwhiz.com (Ryman Auditorium)</a> to find nearby parking.</li>
+        <li>Go to Tootsie’s or a nearby honky‑tonk.</li>
+        <li>Explore <strong>Broadway</strong>: live music, people‑watching, classic neon honky‑tonk vibe — ⏰ <em>~1 hr 30 min</em></li>
+      </ul>
+    </div>
+
+    <!-- Depart for hotel -->
+    <div class="section">
+      <h4 class="time-row">🚗 <span class="time">8:00 PM (9 Eastern)</span> — Depart Broadway area &nbsp; <span class="tag drive-time">~15 min to hotel</span></h4>
+      <ul>
+        <li>Short drive to your hotel in the quieter Belle Meade neighborhood.</li>
+      </ul>
+    </div>
+
+    <!-- Hotel -->
+    <div class="section">
+      <h4>🛏️ 8:15 PM (9:15 Eastern) — Check in at hotel</h4>
+      <p><strong><a href="https://maps.app.goo.gl/JT1DCLPwFywxeHvX6" target="_blank" rel="noopener">Best Western Plus Belle Meade Inn & Suites</a></strong><br/>
+         5600 O’Brien Avenue, Nashville, TN</p>
+      <ul><li>Unwind and recharge for <a href="/day3.html">Day 3</a>!</li></ul>
+    </div>
+<p><br><br></p>
+  <!-- Corner nav -->
+  <div class="corner-nav" aria-hidden="false">
+    <a class="prev" href="/day1.html">← Day 1</a>
+    <a class="next" href="/day3.html">Day 3 →</a>
+  </div>
+
+  </div>
+</body>
+</html>
